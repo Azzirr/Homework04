@@ -26,8 +26,8 @@ writeObjectToJSON()
 
 function addNewObject(){
     const object = {
-        name: args.lastName,
-        lastName: args.name,
+        name: args.name,
+        lastName: args.lastName,
     };
     let getData = JSON.stringify(object, null, 1); 
     fs.appendFile('user.json', getData, (err) => {
